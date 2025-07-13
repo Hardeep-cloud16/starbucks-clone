@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Starbucks Coffee Company</title>
-  <link rel="icon" type="image/png" sizes="64x64"  href="Images/Starbucks_logo.png" />
-
+  <link rel="icon" type="image/png" sizes="64x64" href="Starbucks_logo.png" />
 
   <link rel="stylesheet" href="style.css" />
   <!-- Google Font: Poppins -->
@@ -20,10 +19,9 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav_leftlogo">
-      <img src="Starbucks_logo.png" alt="Starbucks Logo">
-
+      <img src="Starbucks_logo.png" alt="Starbucks Logo" />
     </div>
-    <!-- Add this inside your navbar -->
+    <!-- Hamburger icon for mobile -->
     <div class="hamburger" onclick="toggleMenu()">
       <i class="fas fa-bars"></i>
     </div>
@@ -54,8 +52,7 @@
         <h2>Strato<sup>™</sup></h2>
         <h2>Frappuccino<sup>®</sup></h2>
         <h2>Beverages are here</h2>
-        <p>Savor a rich, flavorful layer of cold foam before diving into a beautifully blended classic. Here for a
-          limited time.</p>
+        <p>Savor a rich, flavorful layer of cold foam before diving into a beautifully blended classic. Here for a limited time.</p>
         <button>Order Now</button>
       </div>
     </div>
@@ -69,8 +66,7 @@
       <div class="promo-text white-theme">
         <h2>See you on the</h2>
         <h2>patio</h2>
-        <p>Soak up the season with Summer-Berry Refreshers and Iced Horchata Oatmilk Shaken Espresso. Here for a limited
-          time.</p>
+        <p>Soak up the season with Summer-Berry Refreshers and Iced Horchata Oatmilk Shaken Espresso. Here for a limited time.</p>
         <button>View the Menu</button>
       </div>
       <div class="promo-image">
@@ -104,8 +100,7 @@
       <div class="promo-text white-theme">
         <h2>Our captivating</h2>
         <h2>new collection</h2>
-        <p>Nigerian-American artist Shadé Akanbi blends tradition and modernity to create rich prints and patterns. For
-          a limited time.</p>
+        <p>Nigerian-American artist Shadé Akanbi blends tradition and modernity to create rich prints and patterns. For a limited time.</p>
         <button>Learn More</button>
       </div>
       <div class="promo-image">
@@ -113,14 +108,11 @@
       </div>
     </div>
   </section>
+
   <div class="sepration_line"></div>
 
   <div class="info_mation">
-    *Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your
-    Starbucks app following sign up and may take up to 48 hours to arrive. Good at participating U.S. stores for a
-    handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol,
-    Starbucks Card and Card reloads. Limit one. Cannot be combined with other offers or discounts. Excludes delivery
-    services. Sign up by 9/28/2025
+    *Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good at participating U.S. stores for a handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. Cannot be combined with other offers or discounts. Excludes delivery services. Sign up by 9/28/2025
   </div>
   <div class="sepration_line"></div>
 
@@ -190,9 +182,9 @@
 
     </div>
   </footer>
+
   <footer>
     <div class="social-icons">
-      <!-- Add links to real pages if needed -->
       <a href="#"><i class="fab fa-spotify"></i></a>
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="#"><i class="fab fa-pinterest-p"></i></a>
@@ -201,6 +193,7 @@
       <a href="#"><i class="fab fa-x-twitter"></i></a>
     </div>
   </footer>
+
   <footer>
     <div class="footer-links-column">
       <a href="#">Privacy Notice</a>
@@ -212,9 +205,6 @@
       <a href="#">Cookie Preferences</a>
     </div>
   </footer>
-  <div class="footer-links-column">
-    <!-- your links here -->
-  </div>
 
   <div class="footer-credit">
     <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
@@ -222,13 +212,13 @@
   </div>
 
   <script>
-  function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    const right = document.querySelector(".nav_rightcontent");
-    menu.classList.toggle("active");
-    right.classList.toggle("active");
-  }
-</script>
+    function toggleMenu() {
+      const leftContent = document.querySelector(".nav_leftcontent");
+      const rightContent = document.querySelector(".nav_rightcontent");
+      leftContent.classList.toggle("active");
+      rightContent.classList.toggle("active");
+    }
+  </script>
 
 </body>
 
