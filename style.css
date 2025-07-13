@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ✅ Added for layout consistency */
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding-top: 90px; /* Equal or more than navbar height */
+}
+
+/* ✅ FINAL NAVBAR STYLING */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ For wrapping on small screens */
+  padding: 0 40px;
+  background-color: #fbfbff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+}
+
+/* ✅ Logo */
+.nav_leftlogo img {
+  height: 100px;
+}
+
+/* ✅ Left menu */
+.nav_leftcontent ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav_leftcontent ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav_leftcontent ul li a:hover {
+  color: #006241;
+  cursor: pointer;
+}
+
+/* ✅ Right content */
+.nav_rightcontent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav_rightcontent a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav_rightcontent a:hover {
+  color: #006241;
+  cursor: pointer;
+}
+
+.nav_rightcontent button {
+  font-size: 14px;
+  padding: 6px 16px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap; /* ✅ Prevent text wrap */
+}
+
+.btn_1 {
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+.btn_1:hover {
+  background-color: #c2c0c0;
+}
+
+.btn_2 {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+}
+
+.btn_2:hover {
+  background-color: rgba(0, 0, 0, 0.43);
+}
+
+/* ✅ Separator */
+.sepration_line {
+  border: 2px solid white;
+  height: 20px;
+  background: #ffffff;
+}
+
+/* ✅ Promo Sections */
+.promo-section {
+  padding: 60px 0;
+  background-color: #f5f1e7;
+}
+
+.dark-section {
+  background-color: #006241;
+}
+
+.promo-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+
+.promo-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.promo-text {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #1e3932;
+  text-align: center;
+}
+
+.promo-text h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.promo-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3e3e3e;
+}
+
+.promo-text button {
+  width: fit-content;
+  padding: 10px 22px;
+  background-color: transparent;
+  border: 2px solid #1e3932;
+  color: #1e3932;
+  font-weight: 600;
+  border-radius: 50px;
+  margin: 15px auto 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.promo-text button:hover {
+  background-color: #d4e9e2;
+}
+
+/* ✅ White Text Version */
+.white-theme {
+  color: white;
+}
+
+.white-theme p {
+  color: white;
+}
+
+.white-theme button {
+  border: 2px solid white;
+  color: white;
+}
+
+.white-theme button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Footer Info Section */
+.info_mation {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ✅ Footer Columns */
+.footer {
+  background-color: #ffffff;
+  padding: 60px 40px;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #979292;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: black;
+}
+
+/* ✅ Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #006241;
+}
+
+/* ✅ Footer Links Bottom Row */
+.footer-links-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-links-column a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.footer-links-column a:hover {
+  color: #363636d2;
+  text-decoration: underline;
+}
+
+/* ✅ Footer Credit */
+.footer-credit {
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+  padding-bottom: 30px;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  .nav_leftcontent ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav_rightcontent {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .promo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo-text {
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-links-column {
+    align-items: center;
+  }
+}
+
+
