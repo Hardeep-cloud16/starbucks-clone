@@ -2,122 +2,119 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Starbucks Coffee Company</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starbucks Coffee Company</title>
   <link rel="icon" type="image/png" sizes="64x64"  href="Images/Starbucks_logo.png" />
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Font: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav_leftlogo">
-            <img src="Images/Starbucks_logo.png" alt="Starbucks_logo">
-        </div>
 
-
-        <div class="nav_leftcontent">
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Rewards</a></li>
-                <li><a href="#">Gift Cards</a></li>
-            </ul>
-        </div>
-
-        <div class="nav_rightcontent">
-            <a href="#"><i class="fas fa-map-marker-alt"></i> 
-                find a store</a>
-            <button class="btn_1">sign in </button>
-            <button class="btn_2">join now</button>
-        </div>
-
-    </nav>
-    <div class="sepration_line"></div>
-
-<section class="promo-section">
-  <div class="promo-container">
-
-    <!-- Left Image -->
-    <div class="promo-image">
-      <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-99483.jpg" alt="Frappuccino">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav_leftlogo">
+      <img src="Images/Starbucks_logo.png" alt="Starbucks Logo" />
+    </div>
+    <!-- Add this inside your navbar -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
     </div>
 
-    <!-- Right Text -->
-    <div class="promo-text">
-      <h2>Strato<sup>™</sup></h2>
-      <h2>Frappuccino<sup>®</sup></h2>
-      <h2>beverages are here</h2>
-      <p>Savor a rich, flavorful layer of cold foam before diving into a beautifully blended classic. Here for a limited time.</p>
-      <button>Order now</button>
+    <div class="nav_leftcontent">
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Rewards</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
     </div>
-
-  </div>
-</section>
-    <div class="sepration_line"></div>
-<section class="promo-section" style="background-color: #006241;">
-  <div class="promo-container">
-
-    <!-- Left Image -->
-    <div class="promo-image">
-      <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-99412.jpg" alt="Frappuccino">
+    <div class="nav_rightcontent">
+      <a href="#"><i class="fas fa-map-marker-alt"></i> Find a Store</a>
+      <button class="btn_1">Sign In</button>
+      <button class="btn_2">Join Now</button>
     </div>
+  </nav>
 
-    <!-- Right Text -->
-    <div class="promo-text" style="color: white;">
-     
-      <h2 ><span>See you on the</span></h2>
-      <h2 ><span>patio</span></h2>
-      <p style="color: white;" >Soak up the season with Summer-Berry Refreshers and Iced Horchata Oatmilk Shaken Espresso. Enjoy these cool favorites while you can. Here for a limited time.</p>
-      <button style="color: white;">View the menu</button>
+  <div class="sepration_line"></div>
+
+  <!-- Section 1 -->
+  <section class="promo-section">
+    <div class="promo-container">
+      <div class="promo-image">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-99483.jpg" alt="" />
+      </div>
+      <div class="promo-text">
+        <h2>Strato<sup>™</sup></h2>
+        <h2>Frappuccino<sup>®</sup></h2>
+        <h2>Beverages are here</h2>
+        <p>Savor a rich, flavorful layer of cold foam before diving into a beautifully blended classic. Here for a
+          limited time.</p>
+        <button>Order Now</button>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
-<div class="sepration_line"></div>
+  <div class="sepration_line"></div>
 
-<section class="promo-section" style="background-color: #cbc1a3">
-  <div class="promo-container">
-
-    <!-- Left Image -->
-    <div class="promo-image">
-      <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-98124.jpg" alt="Frappuccino">
+  <!-- Section 2 -->
+  <section class="promo-section dark-section">
+    <div class="promo-container">
+      <div class="promo-text white-theme">
+        <h2>See you on the</h2>
+        <h2>patio</h2>
+        <p>Soak up the season with Summer-Berry Refreshers and Iced Horchata Oatmilk Shaken Espresso. Here for a limited
+          time.</p>
+        <button>View the Menu</button>
+      </div>
+      <div class="promo-image">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-99412.jpg" alt="" />
+      </div>
     </div>
+  </section>
 
-    <!-- Right Text -->
-    <div class="promo-text">
-   <h3 style="color:  rgb(50, 70, 47);"><b>It starts with free</b></h3>
-      <h2>Enjoy a <b style="color:  rgb(50, 70, 47);">free handcrafted drink</b> when you make a</h2>
-   
-      <p>qualifying purchase during your first week as a Starbucks<sup>®</sup> Rewards member.*</p>
-      <button >join now</button>
+  <div class="sepration_line"></div>
+
+  <!-- Section 3 -->
+  <section class="promo-section" style="background-color: #cbc1a3;">
+    <div class="promo-container">
+      <div class="promo-image">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-98124.jpg" alt="" />
+      </div>
+      <div class="promo-text">
+        <h3 style="color: #32462f;">It starts with free</h3>
+        <h2>Enjoy a <span style="color: #32462f;"><b>free handcrafted drink</b></span> when you make a</h2>
+        <p>qualifying purchase during your first week as a Starbucks<sup>®</sup> Rewards member.*</p>
+        <button>Join Now</button>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
-    <div class="sepration_line"></div>
+  <div class="sepration_line"></div>
 
-    <section class="promo-section" style="color: #006241;">
-  <div class="promo-container">
-
-    <!-- Left Image -->
-    <div class="promo-image">
-      <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-99485.jpg" alt="Frappuccino">
+  <!-- Section 4 -->
+  <section class="promo-section dark-section">
+    <div class="promo-container">
+      <div class="promo-text white-theme">
+        <h2>Our captivating</h2>
+        <h2>new collection</h2>
+        <p>Nigerian-American artist Shadé Akanbi blends tradition and modernity to create rich prints and patterns. For
+          a limited time.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="promo-image">
+        <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-99485.jpg" alt="" />
+      </div>
     </div>
+  </section>
+  <div class="sepration_line"></div>
 
-    <!-- Right Text -->
-    <div class="promo-text">
-      <h2><span>Our captivating</span></h2>
-      <h2><span>new collection</span></h2>
-   
-      <p>Nigerian-American artist Shadé Akanbi blends tradition and modernity to create rich prints and patterns. For a limited time.</p>
-      <button>Learn more</button>
-    </div>
-        <div class="info_mation">
+  <div class="info_mation">
     *Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your
     Starbucks app following sign up and may take up to 48 hours to arrive. Good at participating U.S. stores for a
     handcrafted menu-sized beverage with qualifying purchase ($8 max value). Qualifying purchase excludes alcohol,
@@ -230,9 +227,8 @@
     menu.classList.toggle("active");
     right.classList.toggle("active");
   }
+</script>
 
-  </div>
-</section>
 </body>
- 
+
 </html>
